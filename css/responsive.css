@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media (max-width:1024px) {
     .left-block{width: 94%;
     margin: 30px auto;
@@ -24,8 +31,9 @@
     .navigacia{display: none;}
     .fa-bars{display: block;}
     .cont-forms{width: 98%;
-    margin-top: 10px;}
-    .cont-descr{width: 98%;}
+    margin: 10px auto;}
+    .cont-descr{width: 98%;
+    margin: 0 auto;}
     .cont-header{width: 70%;}
 }
 @media (max-width: 480px) {
@@ -39,4 +47,17 @@
 .cont-header{font-size: 16px;}
 .cont-text{font-size: 12px;}
 .fa-paper-plane{display: none;}
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }
